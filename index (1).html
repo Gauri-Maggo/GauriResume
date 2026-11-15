@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gauri Maggo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #e9f1ff;
+  --card: #ffffff;
+  --ink: #1b1b3a;
+  --muted: #4d4d70;
+  --blue: #2f4bd8;
+  --blue-text: #ffffff;
+  --yellow: #ffd23f;
+  --pink: #ff8fb1;
+  --line: #1b1b3a;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12132b;
+    --card: #1d1f43;
+    --ink: #f1f1ff;
+    --muted: #b6b8e0;
+    --blue: #4f6bff;
+    --line: #f1f1ff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12132b; --card: #1d1f43; --ink: #f1f1ff; --muted: #b6b8e0;
+  --blue: #4f6bff; --line: #f1f1ff; color-scheme: dark;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+h1, h2, h3 { font-family: "Fredoka", "Trebuchet MS", sans-serif; font-weight: 600; line-height: 1.15; margin: 0; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+/* header */
+header { background: var(--blue); color: var(--blue-text); border-bottom: 3px solid var(--line); padding: 56px 0 48px; }
+header h1 { font-size: clamp(2.8rem, 10vw, 5rem); letter-spacing: -1px; }
+header .tag { font-size: 1.25rem; margin: 14px 0 22px; max-width: 30em; }
+.btn {
+  display: inline-block; background: var(--yellow); color: #1b1b3a; text-decoration: none;
+  font-weight: 700; padding: 10px 18px; border: 2px solid #1b1b3a; border-radius: 8px;
+  box-shadow: 4px 4px 0 #1b1b3a;
+}
+.btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #1b1b3a; }
+
+nav { background: var(--card); border-bottom: 3px solid var(--line); }
+nav .wrap { display: flex; gap: 22px; padding-top: 12px; padding-bottom: 12px; overflow-x: auto; }
+nav a { font-weight: 700; text-decoration: none; white-space: nowrap; }
+nav a:hover { text-decoration: underline wavy var(--pink); text-underline-offset: 5px; }
+
+section { padding: 44px 0 8px; }
+h2 { font-size: 2rem; margin-bottom: 20px; display: inline-block; background: var(--yellow); color: #1b1b3a; padding: 2px 12px; border: 2px solid #1b1b3a; border-radius: 8px; transform: rotate(-1.5deg); }
+
+.box {
+  background: var(--card); border: 2px solid var(--line); border-radius: 10px;
+  box-shadow: 5px 5px 0 var(--line); padding: 18px 20px; margin-bottom: 22px;
+}
+.box h3 { font-size: 1.3rem; }
+.when { color: var(--muted); font-weight: 600; margin: 2px 0 10px; }
+.box ul { margin: 8px 0 0; padding-left: 20px; }
+.box li { margin-bottom: 4px; }
+.box p { margin: 8px 0 0; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip { background: var(--pink); color: #1b1b3a; font-weight: 700; font-size: .9rem; padding: 3px 12px; border: 2px solid #1b1b3a; border-radius: 99px; }
+
+.about { font-size: 1.1rem; }
+.grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.grid .box { margin-bottom: 0; }
+
+footer { margin-top: 56px; background: var(--ink); color: var(--bg); padding: 32px 0; text-align: center; }
+footer a { font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Gauri Maggo</h1>
+    <p class="tag">Commerce student at NMIMS and IIM Bangalore. I like markets, research and making things look good.</p>
+    <a class="btn" href="mailto:gaurimaggo1701@gmail.com">Email me</a>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="about">
+  <h2>About me</h2>
+  <div class="box about">
+    <p style="margin-top:0">I'm a B.Com (Hons.) student at NMIMS Navi Mumbai, and I'm also doing a BBA in Digital Business and Entrepreneurship at IIM Bangalore. I enjoy finance, data and design, and I learn best by trying things out.</p>
+    <p>I want to build a career in finance and business, and I'm looking for internships where I can keep learning and take on real work.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="box">
+    <h3>Financial Literacy Intern, ETASHA Society</h3>
+    <div class="when">New Delhi, June 2026 (60 hours)</div>
+    <ul>
+      <li>Built a financial-literacy module for 20 first-time earners.</li>
+      <li>Presented savings options, government schemes and account opening in English and Hindi.</li>
+      <li>Made infographics and a compounding example, and introduced mutual funds and small SIPs.</li>
+      <li>Received a Letter of Commendation for creativity and investment knowledge.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>Marketing Sub-Head, NMIMS Cultural Committee</h3>
+    <div class="when">2026 to now (Committee Member 2025–26)</div>
+    <ul>
+      <li>Run social media for 6 events and have published 50+ creatives.</li>
+      <li>Came up with offline ideas like "Grab Your Garba Partner" and a bride-and-groom costume promo.</li>
+      <li>Guide team members on creative work and coordinate with the Sponsorship Department.</li>
+      <li>Helped plan 4 events as a committee member before becoming Sub-Head.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="box">
+    <h3>B.Com (Hons.), NMIMS, Navi Mumbai</h3>
+    <div class="when">2025 to 2029 | CGPA 8.02</div>
+    <p>GPA went from 7.64 in Sem I to 8.41 in Sem II.</p>
+  </div>
+
+  <div class="box">
+    <h3>BBA (Digital Business and Entrepreneurship), IIM Bangalore</h3>
+    <div class="when">Online, 2026 to 2029 | Pursuing</div>
+  </div>
+
+  <div class="grid">
+    <div class="box">
+      <h3>Class XII</h3>
+      <div class="when">St. Thomas Girls Sr. Sec. School, New Delhi</div>
+      <p>CBSE, 2025, 82.8%</p>
+    </div>
+    <div class="box">
+      <h3>Class X</h3>
+      <div class="when">St. Thomas Girls Sr. Sec. School, New Delhi</div>
+      <p>CBSE, 2023, 85.8%</p>
+    </div>
+  </div>
+
+  <div class="box" style="margin-top:22px">
+    <h3>Certifications</h3>
+    <ul>
+      <li>Introduction to Artificial Intelligence, University of Illinois Urbana-Champaign (Coursera), 2026</li>
+      <li>Strategy Consulting Job Simulation, BCG (Forage), 2026</li>
+      <li>Management Accounting, Great Learning, 2026</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="box">
+    <h3>Bloomberg Global Trading Challenge</h3>
+    <p>I captained a team of 5 (Team Stockaholic) in a global portfolio simulation. We ranked 859th out of about 3,000 teams, which is the top 29%. We spread money across IT, financial services and defence, and kept some cash aside to reduce risk.</p>
+    <div class="chips"><span class="chip">Bloomberg trading simulator</span><span class="chip">Portfolio management</span><span class="chip">Market research</span></div>
+  </div>
+
+  <div class="box">
+    <h3>Board Diversity and ESG Performance of NIFTY IT Companies</h3>
+    <p>A group research study on whether more diverse boards lead to better ESG scores in the top 5 NIFTY IT companies. We found a weak positive link, mostly with gender diversity.</p>
+    <div class="chips"><span class="chip">Secondary data</span><span class="chip">Correlation analysis</span><span class="chip">Quantitative research</span></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="box">
+    <div class="chips" style="margin-top:0">
+      <span class="chip">PowerPoint (Advanced)</span>
+      <span class="chip">Canva (Advanced)</span>
+      <span class="chip">Excel (Intermediate)</span>
+      <span class="chip">Python (Basic)</span>
+      <span class="chip">R (Basic)</span>
+    </div>
+    <p>Languages: English (fluent), Hindi (fluent), French (basic)</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0">Say hi at <a href="mailto:gaurimaggo1701@gmail.com">gaurimaggo1701@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
